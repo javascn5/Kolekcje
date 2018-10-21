@@ -36,12 +36,29 @@ public class Collections {
             System.out.println("\nElement o indeksie 2: " + imie);
         } catch (IndexOutOfBoundsException e) {
             System.out.println("Poza listą!");
-            e.printStackTrace();                 //wypisuje blad
+            //e.printStackTrace();                 //wypisuje blad
         }
 
 
 //todo usuwanie wszystkich elementow listy
         lista.clear();                      //usuwamy wszystkie elementy listy
         System.out.println("Rozmiar listy: " + lista.size());
+//---------------------------------------------------------------------
+//todo Zad1
+        System.out.println("\n\nZad. 1:\n");
+        List<User> people = new ArrayList<>();
+
+        User user_1 = new User("Anna", "Mita", 99);
+        User user_2 = new User("Michal", "Bit", 69);
+        User user_3 = new User("Cyber", "Marian", 32);
+
+        people.add(user_1);
+        people.add(user_2);
+        people.add(user_3);
+
+        for (User ludziki: people){
+            System.out.println(ludziki.getName() + " " + ludziki.getLastName() + " " + ludziki.getAge());
+        }
+
     }
 }
