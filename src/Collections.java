@@ -34,9 +34,9 @@ public class Collections {
         try {
             String imie = lista.get(92);         //pobranie z listy
             System.out.println("\nElement o indeksie 2: " + imie);
-        }catch (IndexOutOfBoundsException e){
+        } catch (IndexOutOfBoundsException e) {
             System.out.println("Poza listą!");
-            e.printStackTrace();        //wypisuje blad
+            e.printStackTrace();                 //wypisuje blad
         }
 
 
